@@ -9,8 +9,12 @@ public class Feature {
 		Random rand = new Random();
 		int randomValue = rand.nextInt(10);
 		//System.out.println(randomValue);
-		if(randomValue > 8) {
+		if(randomValue > 9) {
+			type = FeatureTypes.VERYGOOD;
+		}else if(randomValue > 8) {
 			type = FeatureTypes.GOOD;
+		}else if(randomValue <=1) {
+			type = FeatureTypes.OHDEARGODWHY;
 		}else if(randomValue <=3) {
 			type = FeatureTypes.BAD;
 		}else {

@@ -116,6 +116,14 @@ public class Game {
 			thePlayer.incrementScore();
 		}else if(getFeatureType().equals(FeatureTypes.BAD.name().toLowerCase())){
 			thePlayer.decrementScore();
+		}else if(getFeatureType().equals(FeatureTypes.OHDEARGODWHY.name().toLowerCase())){
+			for(int i = 0;i < 10;i++) {
+				thePlayer.decrementScore();
+			}
+		}else if(getFeatureType().equals(FeatureTypes.VERYGOOD.name().toLowerCase())){
+			for(int i = 0;i < 2;i++) {
+				thePlayer.incrementScore();
+			}
 		}
 	}
 	
