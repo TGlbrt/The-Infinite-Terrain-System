@@ -26,7 +26,7 @@ public class Game {
 	}
 	
 	public void newDirection(Action action) {
-		System.out.println("player action is : " + action.toString());
+		//System.out.println("player action is : " + action.toString());
 		switch (action){
 			case NORTH:
 				setPlayerLocation(thePlayer.getXLocation(),thePlayer.getYLocation()+1);
@@ -111,7 +111,7 @@ public class Game {
 	}
 	
 	public void updatePlayerScore() {
-		System.out.println("updatePlayerScore called");
+		//System.out.println("updatePlayerScore called");
 		if(getFeatureType().equals(FeatureTypes.GOOD.name().toLowerCase())) {
 			thePlayer.incrementScore();
 		}else if(getFeatureType().equals(FeatureTypes.BAD.name().toLowerCase())){
